@@ -1,0 +1,88 @@
+db.evaluacion.insertMany([
+    {
+        _id: "EV-001",
+        estado: "aprobado",
+        fechaEvaluacion: ISODate("2025-06-05T00:00:00Z"),
+        justificacion: "Cumple requisitos y cuenta con avales completos.",
+        actaAprovacion: BinData(0, "AA=="),
+        eventoId: "69140e2535bcd089ce73a105", // Torneo Básquet
+        usuarioId: 13                         // Lucía (secretaria)
+    },
+    {
+        _id: "EV-002",
+        estado: "rechazado",
+        fechaEvaluacion: ISODate("2025-06-08T00:00:00Z"),
+        justificacion: "Falta póliza de seguros para actividad deportiva.",
+        eventoId: "69140e2535bcd089ce73a109", // Partido Fútbol
+        usuarioId: 14                          // Andrea (secretaria)
+    },
+    {
+        _id: "EV-003",
+        estado: "aprobado",
+        fechaEvaluacion: ISODate("2025-07-05T00:00:00Z"),
+        justificacion: "Documentación completa y riesgos controlados.",
+        actaAprovacion: BinData(0, "AA=="),
+        eventoId: "69140e2535bcd089ce73a108", // Práctica Química
+        usuarioId: 15                          // Mariana (secretaria)
+    },
+    {
+        _id: "EV-004",
+        estado: "rechazado",
+        fechaEvaluacion: ISODate("2025-07-30T00:00:00Z"),
+        justificacion: "Horario se solapa con otra reserva del laboratorio.",
+        eventoId: "69140e2535bcd089ce73a108", // Práctica Química
+        usuarioId: 16                          // Tatiana (secretaria)
+    },
+    {
+        _id: "EV-005",
+        estado: "aprobado",
+        fechaEvaluacion: ISODate("2025-08-10T00:00:00Z"),
+        justificacion: "Ajustes de aforo y personal de apoyo confirmados.",
+        actaAprovacion: BinData(0, "AA=="),
+        eventoId: "69140e2535bcd089ce73a10b", // Coloquio Geología
+        usuarioId: 17                          // Beatriz (secretaria)
+    },
+    {
+        _id: "EV-006",
+        estado: "aprobado",
+        fechaEvaluacion: ISODate("2025-08-18T00:00:00Z"),
+        justificacion: "Cumple lineamientos académicos y de seguridad.",
+        actaAprovacion: BinData(0, "AA=="),
+        eventoId: "69140e2535bcd089ce73a106", // Seminario IA
+        usuarioId: 13                          // Lucía
+    },
+    {
+        _id: "EV-007",
+        estado: "rechazado",
+        fechaEvaluacion: ISODate("2025-08-25T00:00:00Z"),
+        justificacion: "Falta certificación de cooperación de empresa externa.",
+        eventoId: "69140e2535bcd089ce73a106", // Seminario IA
+        usuarioId: 14                          // Andrea
+    },
+    {
+        _id: "EV-008",
+        estado: "aprobado",
+        fechaEvaluacion: ISODate("2025-09-01T00:00:00Z"),
+        justificacion: "Patrocinadores y logística confirmados.",
+        actaAprovacion: BinData(0, "AA=="),
+        eventoId: "69140e2535bcd089ce73a107", // Feria Emprendimiento
+        usuarioId: 15                          // Mariana
+    },
+    {
+        _id: "EV-009",
+        estado: "aprobado",
+        fechaEvaluacion: ISODate("2025-09-20T00:00:00Z"),
+        justificacion: "Plan de evacuación y pólizas adjuntas.",
+        actaAprovacion: BinData(0, "AA=="),
+        eventoId: "69140e2535bcd089ce73a10a", // Concierto Ensambles
+        usuarioId: 16                          // Tatiana
+    },
+    {
+        _id: "EV-010",
+        estado: "rechazado",
+        fechaEvaluacion: ISODate("2025-11-10T00:00:00Z"),
+        justificacion: "Inconsistencia en el aforo declarado.",
+        eventoId: "69140e2535bcd089ce73a10c", // Donación de Sangre
+        usuarioId: 17                          // Beatriz
+    }
+], { ordered: true });

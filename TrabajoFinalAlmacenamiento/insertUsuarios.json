@@ -1,0 +1,205 @@
+db.usuario.insertMany([
+    {
+        _id: 1,
+        nombre: "Laura",
+        apellidos: "Jiménez",
+        email: "laura.jimenez@uni.edu",
+        telefonos: ["3001234567"],
+        password: { clave: "clave123", fechaCambio: ISODate("2025-01-15"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0e5") } // Ing. de Sistemas
+    },
+    {
+        _id: 2,
+        nombre: "Mateo",
+        apellidos: "Torres",
+        email: "mateo.torres@uni.edu",
+        telefonos: ["3009876543"],
+        password: { clave: "mypass456", fechaCambio: ISODate("2025-02-20"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0e7") } // Ing. Civil
+    },
+    {
+        _id: 3,
+        nombre: "Valentina",
+        apellidos: "Sánchez",
+        email: "valentina.sanchez@uni.edu",
+        telefonos: ["3015557788"],
+        password: { clave: "secure789", fechaCambio: ISODate("2025-03-10"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0ed") } // Economía
+    },
+    {
+        _id: 4,
+        nombre: "Andrés",
+        apellidos: "Castillo",
+        email: "andres.castillo@uni.edu",
+        telefonos: ["3016668899"],
+        password: { clave: "uni2025", fechaCambio: ISODate("2025-04-05"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0f5") } // Geología Ambiental
+    },
+    {
+        _id: 5,
+        nombre: "Camila",
+        apellidos: "Gómez",
+        email: "camila.gomez@uni.edu",
+        telefonos: ["3021112233"],
+        password: { clave: "cgpass", fechaCambio: ISODate("2025-05-22"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0fb") } // Música
+    },
+    {
+        _id: 6,
+        nombre: "Sebastián",
+        apellidos: "Rojas",
+        email: "sebastian.rojas@uni.edu",
+        telefonos: ["3024445566"],
+        password: { clave: "123seb", fechaCambio: ISODate("2025-02-01"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a101") } // Medicina
+    },
+
+    {
+        _id: 7,
+        nombre: "Paola",
+        apellidos: "Martínez",
+        email: "paola.martinez@uni.edu",
+        telefonos: ["3031234567"],
+        password: { clave: "pdocente", fechaCambio: ISODate("2025-01-10"), estado: "activa" },
+        rol: "docente",
+        datos: { unidadAcademicaId: ObjectId("6914003b35bcd089ce73a0e1") } // Dpto Sistemas
+    },
+    {
+        _id: 8,
+        nombre: "Julián",
+        apellidos: "Ortiz",
+        email: "julian.ortiz@uni.edu",
+        telefonos: ["3037654321"],
+        password: { clave: "teach88", fechaCambio: ISODate("2025-03-02"), estado: "activa" },
+        rol: "docente",
+        datos: { unidadAcademicaId: ObjectId("6914003b35bcd089ce73a0e3") } // Dpto Civil
+    },
+    {
+        _id: 9,
+        nombre: "Natalia",
+        apellidos: "López",
+        email: "natalia.lopez@uni.edu",
+        telefonos: ["3041239876"],
+        password: { clave: "lopezN", fechaCambio: ISODate("2025-01-25"), estado: "activa" },
+        rol: "docente",
+        datos: { unidadAcademicaId: ObjectId("6914003b35bcd089ce73a0eb") } // Dpto Economía
+    },
+    {
+        _id: 10,
+        nombre: "Carlos",
+        apellidos: "Guerra",
+        email: "carlos.guerra@uni.edu",
+        telefonos: ["3049871234"],
+        password: { clave: "cguerra", fechaCambio: ISODate("2025-04-15"), estado: "activa" },
+        rol: "docente",
+        datos: { unidadAcademicaId: ObjectId("6914003b35bcd089ce73a0f0") } // Dpto Biología
+    },
+    {
+        _id: 11,
+        nombre: "Marcela",
+        apellidos: "Ruiz",
+        email: "marcela.ruiz@uni.edu",
+        telefonos: ["3052223344"],
+        password: { clave: "mrpass", fechaCambio: ISODate("2025-02-10"), estado: "activa" },
+        rol: "docente",
+        datos: { unidadAcademicaId: ObjectId("6914003b35bcd089ce73a0f9") } // Dpto Teatro
+    },
+    {
+        _id: 12,
+        nombre: "Felipe",
+        apellidos: "Moreno",
+        email: "felipe.moreno@uni.edu",
+        telefonos: ["3056667788"],
+        password: { clave: "fmoreno", fechaCambio: ISODate("2025-03-11"), estado: "activa" },
+        rol: "docente",
+        datos: { unidadAcademicaId: ObjectId("6914003b35bcd089ce73a100") } // Dpto Enfermería
+    },
+
+    {
+        _id: 13,
+        nombre: "Lucía",
+        apellidos: "Benítez",
+        email: "lucia.benitez@uni.edu",
+        telefonos: ["3061239999"],
+        password: { clave: "secret1", fechaCambio: ISODate("2025-01-12"), estado: "activa" },
+        rol: "secretariaAcademica",
+        datos: { facultadId: ObjectId("6914003b35bcd089ce73a0e0") } // Facultad de Ingeniería
+    },
+    {
+        _id: 14,
+        nombre: "Andrea",
+        apellidos: "Cano",
+        email: "andrea.cano@uni.edu",
+        telefonos: ["3065557777"],
+        password: { clave: "admincan", fechaCambio: ISODate("2025-03-19"), estado: "activa" },
+        rol: "secretariaAcademica",
+        datos: { facultadId: ObjectId("6914003b35bcd089ce73a0ea") } // Facultad Económicas
+    },
+    {
+        _id: 15,
+        nombre: "Mariana",
+        apellidos: "Suárez",
+        email: "mariana.suarez@uni.edu",
+        telefonos: ["3071112233"],
+        password: { clave: "secreM", fechaCambio: ISODate("2025-02-28"), estado: "activa" },
+        rol: "secretariaAcademica",
+        datos: { facultadId: ObjectId("6914003b35bcd089ce73a0ef") } // Facultad Naturales
+    },
+    {
+        _id: 16,
+        nombre: "Tatiana",
+        apellidos: "Rincón",
+        email: "tatiana.rincon@uni.edu",
+        telefonos: ["3075556677"],
+        password: { clave: "trpass", fechaCambio: ISODate("2025-04-03"), estado: "activa" },
+        rol: "secretariaAcademica",
+        datos: { facultadId: ObjectId("6914003b35bcd089ce73a0f7") } // Facultad Artes
+    },
+    {
+        _id: 17,
+        nombre: "Beatriz",
+        apellidos: "Pardo",
+        email: "beatriz.pardo@uni.edu",
+        telefonos: ["3089994455"],
+        password: { clave: "bpardo", fechaCambio: ISODate("2025-01-18"), estado: "activa" },
+        rol: "secretariaAcademica",
+        datos: { facultadId: ObjectId("6914003b35bcd089ce73a0fe") } // Facultad Salud
+    },
+
+    {
+        _id: 18,
+        nombre: "Samuel",
+        apellidos: "Álvarez",
+        email: "samuel.alvarez@uni.edu",
+        telefonos: ["3093332211"],
+        password: { clave: "sam2025", fechaCambio: ISODate("2025-05-01"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0ee") } // Administración
+    },
+    {
+        _id: 19,
+        nombre: "Isabella",
+        apellidos: "Morales",
+        email: "isabella.morales@uni.edu",
+        telefonos: ["3095556677"],
+        password: { clave: "isam2025", fechaCambio: ISODate("2025-04-21"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a0f4") } // Química Pura
+    },
+    {
+        _id: 20,
+        nombre: "Tomás",
+        apellidos: "Fernández",
+        email: "tomas.fernandez@uni.edu",
+        telefonos: ["3102224455"],
+        password: { clave: "tfpass", fechaCambio: ISODate("2025-03-09"), estado: "activa" },
+        rol: "estudiante",
+        datos: { programaId: ObjectId("6914003b35bcd089ce73a103") } // Fisioterapia
+    }
+]);

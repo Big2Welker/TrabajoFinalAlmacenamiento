@@ -1,0 +1,304 @@
+db.evento.insertMany([
+    {
+        _id: ObjectId(),
+        nombre: "Torneo Relámpago de Básquet",
+        estado: "registrado",
+        tipo: "ludico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "CAN-BKB-1" }
+        ],
+        fecha: ISODate("2025-06-10T00:00:00Z"),
+        horaInicio: "15:00",
+        horaFin: "18:00"
+        },
+        organizador: [
+        {
+            usuarioId: 1,                 // Laura (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "si"
+        },
+        {
+            usuarioId: 8,                 // Julián (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "no"
+        }
+        ],
+        organizacion: [
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0d6"), // TechNova S.A.S.
+            participante: "Camila Rojas",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Seminario de Inteligencia Artificial",
+        estado: "enRevision",
+        tipo: "academico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "AUD-ING" },
+            { instalacionId: "LAB-INFO-1" }
+        ],
+        fecha: ISODate("2025-08-22T00:00:00Z"),
+        horaInicio: "08:00",
+        horaFin: "12:30"
+        },
+        organizador: [
+        {
+            usuarioId: 7,                 // Paola (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "si"
+        },
+        {
+            usuarioId: 3,                 // Valentina (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "no"
+        }
+        ],
+        organizacion: [
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0d8"), // Clinisalud Integral IPS
+            participante: "María Fernanda Cáceres",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Feria de Emprendimiento Universitario",
+        estado: "aprovado",
+        tipo: "academico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "AUD-PRINC" }
+        ],
+        fecha: ISODate("2025-09-05T00:00:00Z"),
+        horaInicio: "09:00",
+        horaFin: "17:00"
+        },
+        organizador: [
+        {
+            usuarioId: 9,                 // Natalia (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "si"
+        },
+        {
+            usuarioId: 18,                // Samuel (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "no"
+        }
+        ],
+        organizacion: [
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0db"), // Fiduciaria Andina S.A.
+            participante: "Andrés F. Jaramillo",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        },
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0de"), // LogiExpress S.A.
+            participante: "Paola Hernández",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Práctica de Laboratorio de Química: Titulación Ácido-Base",
+        estado: "registrado",
+        tipo: "academico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "LAB-QUIM-1" }
+        ],
+        fecha: ISODate("2025-07-12T00:00:00Z"),
+        horaInicio: "10:00",
+        horaFin: "12:00"
+        },
+        organizador: [
+        {
+            usuarioId: 12,                // Felipe (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "si"
+        },
+        {
+            usuarioId: 5,                 // Camila (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "no"
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Partido Amistoso de Fútbol Facultad vs Estudiantes",
+        estado: "enRevision",
+        tipo: "ludico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "CAN-FT-EXT" }
+        ],
+        fecha: ISODate("2025-06-20T00:00:00Z"),
+        horaInicio: "16:30",
+        horaFin: "18:30"
+        },
+        organizador: [
+        {
+            usuarioId: 2,                 // Mateo (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "si"
+        },
+        {
+            usuarioId: 10,                // Carlos (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "no"
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Concierto de Ensambles - Facultad de Artes",
+        estado: "aprovado",
+        tipo: "ludico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "SAL-ARQ-2" }
+        ],
+        fecha: ISODate("2025-10-03T00:00:00Z"),
+        horaInicio: "19:00",
+        horaFin: "21:00"
+        },
+        organizador: [
+        {
+            usuarioId: 11,                // Marcela (docente - Teatro)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "si"
+        },
+        {
+            usuarioId: 20,                // Tomás (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "no"
+        }
+        ],
+        organizacion: [
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0dc"), // Red Solidaria ONG
+            participante: "Laura Martínez",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Coloquio de Geología Andina",
+        estado: "registrado",
+        tipo: "academico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "SAL-C305" }
+        ],
+        fecha: ISODate("2025-08-01T00:00:00Z"),
+        horaInicio: "14:00",
+        horaFin: "17:00"
+        },
+        organizador: [
+        {
+            usuarioId: 10,                // Carlos (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "si"
+        },
+        {
+            usuarioId: 4,                 // Andrés (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "no"
+        }
+        ],
+        organizacion: [
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0da"), // AgroVerde Colombia
+            participante: "Diana Paola Ortiz",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        }
+        ]
+    },
+
+    {
+        _id: ObjectId(),
+        nombre: "Jornada de Donación de Sangre Universitaria",
+        estado: "enRevision",
+        tipo: "academico",
+        realizacion: {
+        instalaciones: [
+            { instalacionId: "SAL-B201" }
+        ],
+        fecha: ISODate("2025-11-20T00:00:00Z"),
+        horaInicio: "08:00",
+        horaFin: "15:00"
+        },
+        organizador: [
+        {
+            usuarioId: 12,                // Felipe (docente)
+            tipoUsuario: "docente",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorDocencia",
+            principal: "si"
+        },
+        {
+            usuarioId: 6,                 // Sebastián (estudiante)
+            tipoUsuario: "estudiante",
+            avalPDF: BinData(0, "AA=="),
+            tipoAval: "directorPrograma",
+            principal: "no"
+        }
+        ],
+        organizacion: [
+        {
+            organizacionId: ObjectId("6913ff2935bcd089ce73a0d9"), // Caribe Textiles LTDA
+            participante: "Ricardo Pacheco",
+            esRepresentanteLegal: "si",
+            certificadoParticipacion: BinData(0, "AA==")
+        }
+        ]
+    }
+], { ordered: true });

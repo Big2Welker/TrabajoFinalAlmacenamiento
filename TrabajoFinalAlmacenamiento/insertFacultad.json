@@ -1,0 +1,74 @@
+db.facultad.insertMany([
+    {
+        _id: "ObjectId()",
+        nombre: "Facultad de Ingeniería",
+        unidadAcademica: [
+        { unidadId: "ObjectId()", nombre: "Departamento de Sistemas" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Electrónica" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Civil" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Industrial" }
+        ],
+        programa: [
+        { programaId: "ObjectId()", nombre: "Ingeniería de Sistemas" },
+        { programaId: "ObjectId()", nombre: "Ingeniería Electrónica" },
+        { programaId: "ObjectId()", nombre: "Ingeniería Civil" },
+        { programaId: "ObjectId()", nombre: "Ingeniería Industrial" },
+        { programaId: "ObjectId()", nombre: "Ingeniería Mecánica" }
+        ]
+    },
+    {
+        _id: "ObjectId()",
+        nombre: "Facultad de Ciencias Económicas",
+        unidadAcademica: [
+        { unidadId: "ObjectId()", nombre: "Departamento de Economía" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Administración" }
+        ],
+        programa: [
+        { programaId: "ObjectId()", nombre: "Economía" },
+        { programaId: "ObjectId()", nombre: "Administración de Empresas" }
+        ]
+    },
+    {
+        _id: "ObjectId()",
+        nombre: "Facultad de Ciencias Naturales",
+        unidadAcademica: [
+        { unidadId: "ObjectId()", nombre: "Departamento de Biología" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Química" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Geología" }
+        ],
+        programa: [
+        { programaId: "ObjectId()", nombre: "Biología" },
+        { programaId: "ObjectId()", nombre: "Química Pura" },
+        { programaId: "ObjectId()", nombre: "Geología Ambiental" },
+        { programaId: "ObjectId()", nombre: "Ciencias del Mar" }
+        ]
+    },
+    {
+        _id: "ObjectId()",
+        nombre: "Facultad de Artes",
+        unidadAcademica: [
+        { unidadId: "ObjectId()", nombre: "Departamento de Música" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Teatro" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Artes Visuales" }
+        ],
+        programa: [
+        { programaId: "ObjectId()", nombre: "Música" },
+        { programaId: "ObjectId()", nombre: "Artes Escénicas" },
+        { programaId: "ObjectId()", nombre: "Artes Plásticas" }
+        ]
+    },
+    {
+        _id: "ObjectId()",
+        nombre: "Facultad de Ciencias de la Salud",
+        unidadAcademica: [
+        { unidadId: "ObjectId()", nombre: "Departamento de Medicina" },
+        { unidadId: "ObjectId()", nombre: "Departamento de Enfermería" }
+        ],
+        programa: [
+        { programaId: "ObjectId()", nombre: "Medicina" },
+        { programaId: "ObjectId()", nombre: "Enfermería" },
+        { programaId: "ObjectId()", nombre: "Fisioterapia" },
+        { programaId: "ObjectId()", nombre: "Odontología" }
+        ]
+    }
+], { ordered: true });
